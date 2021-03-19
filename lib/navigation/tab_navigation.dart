@@ -4,6 +4,7 @@ import 'package:flutter_eyepetizer/config/string.dart';
 import 'package:flutter_eyepetizer/page/discovery_page.dart';
 import 'package:flutter_eyepetizer/page/home_page.dart';
 import 'package:flutter_eyepetizer/page/mine_page.dart';
+import 'package:flutter_eyepetizer/page/project/project_page.dart';
 import 'package:flutter_eyepetizer/page/rank_page.dart';
 import 'package:flutter_eyepetizer/provider/tab_navigation_model.dart';
 import 'package:flutter_eyepetizer/util/toast_util.dart';
@@ -27,7 +28,7 @@ class _TabNavigationState extends State<TabNavigation> {
             physics: NeverScrollableScrollPhysics(),
             children: <Widget>[
               HomePage(),
-              DiscoveryPage(),
+              ProjectPage(),
               RankPage(),
               MinePage()
             ],

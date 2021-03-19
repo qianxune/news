@@ -7,6 +7,11 @@ import 'package:http/http.dart' as http;
 class ApiService {
   ApiService._();
 
+  static final String BASE_URL = "https://www.wanandroid.com/";
+
+  static final String PROJECT_LIST = BASE_URL + "project/list/";
+
+
   static const base_url = 'http://baobab.kaiyanapp.com/api/';
 
   static const feed_url = '${base_url}v2/feed?num=1';
@@ -33,6 +38,10 @@ class ApiService {
   static const search_url = "${base_url}v1/search?query=";
 
   static const category_video_url = '${base_url}v4/categories/videoList?';
+
+
+  static final String DEFAULT_PROJECT_IMG =
+      "wanandroid.com/resources/image/pc/default_project_img.jpg";
 
   //网络请求封装，通过方法回调执行的结果(成功或失败)
   //网络请求封装方式一：采用回调函数处理请求结果，类似Android开发
